@@ -1,5 +1,13 @@
 # Minishell1
 
+![Language](https://img.shields.io/badge/Language-C-blue)
+![POSIX](https://img.shields.io/badge/POSIX-Compliant-gold)
+![Build](https://img.shields.io/badge/Build-Makefile-orange)
+![Last Commit](https://img.shields.io/github/last-commit/Enoal-Fauchille-Bolle/Minishell1)
+![Repo Size](https://img.shields.io/github/repo-size/Enoal-Fauchille-Bolle/Minishell1)
+![License](https://img.shields.io/github/license/Enoal-Fauchille-Bolle/Minishell1)
+[![wakatime](https://wakatime.com/badge/user/018bbded-63e4-4a01-bd5e-21d050739656/project/018d9e23-cd0c-4c69-a2a5-ad52761be511.svg)](https://wakatime.com/badge/user/018bbded-63e4-4a01-bd5e-21d050739656/project/018d9e23-cd0c-4c69-a2a5-ad52761be511)
+
 Minishell1 is a minimalist UNIX command interpreter written in C. This project, inspired by TCSH, is designed as a foundational step toward more advanced shells. It provides basic command execution and supports a set of built-in commands.
 
 ## Project Goals
