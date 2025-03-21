@@ -5,7 +5,8 @@
 ** Minishell 1 Header
 */
 
-#pragma once
+#ifndef MINISHELL1_H_
+    #define MINISHELL1_H_
 
     #include "list.h"
     #include <sys/stat.h>
@@ -28,3 +29,5 @@ int my_unsetenv(char **args, char ***env);
 
 // Variable Environment Management
 char *my_getenv(char *name, char **env);
+
+#endif /* !MINISHELL1_H_ */

@@ -55,7 +55,7 @@ int my_getnbr_modifiers(char *modifiers)
 int absolue(int nb)
 {
     if (nb < 0) {
-        return -nb;
+        return (-nb);
     }
     return nb;
 }

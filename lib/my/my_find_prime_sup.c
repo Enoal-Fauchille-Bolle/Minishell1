@@ -13,7 +13,7 @@ static int my_find_prime_sup_is_prime(int nb)
     if (nb <= 0) {
         return 0;
     }
-    for (int i = 1; i <= 9; i ++) {
+    for (int i = 1; i <= 9; i++) {
         if (nb % i == 0 && i != 1 && i != nb) {
             return 0;
         }

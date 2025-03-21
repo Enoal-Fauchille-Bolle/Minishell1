@@ -5,12 +5,13 @@
 ** Parsing File
 */
 
-#include "my.h"
-#include "my_printf.h"
-#include "list.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+
+#include "list.h"
+#include "my.h"
+#include "my_printf.h"
 
 static void strip_cmd(char **cmd)
 {
@@ -38,17 +39,6 @@ static char **format_command(char *command)
     return args;
 }
 
-// static void debug_commands(list_t *commands)
-// {
-//     list_t *command = commands;
-
-//     while (command != NULL) {
-//         my_printf("arrlen: %d\n", my_arrlen((void *)(command->data)));
-//         for (int i = 0; ((char **)command->data)[i]; i++)
-//             my_printf("%s\n", ((char **)command->data)[i]);
-//         command = command->next;
-//     }
-// }
 list_t *get_commands(int *end)
 {
     list_t *commands = NULL;
@@ -85,8 +75,8 @@ char **get_paths(char **env)
     }
     if (pathlist == NULL)
         return NULL;
-    pathlist = my_strconcat("./commands:",
-        my_slice(pathlist, 5, my_strlen(pathlist)));
+    pathlist = my_strconcat(
+        "./commands:", my_slice(pathlist, 5, my_strlen(pathlist)));
     paths = my_str_split(pathlist, ':');
     free(pathlist);
     return paths;

@@ -15,7 +15,7 @@ int my_putstr(char const *str)
 
     while (stop == 0) {
         my_putchar(str[i]);
-        length ++;
+        length++;
         i++;
         if (str[i] == '\0') {
             stop = 1;

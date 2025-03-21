@@ -5,7 +5,8 @@
 ** task02
 */
 
-#pragma once
+#ifndef MY_H_
+    #define MY_H_
 
 void my_putchar(char);
 int my_isneg(int);
@@ -54,3 +55,5 @@ int my_strarr_get_nindex(char **arr, char *str, int occurence);
 void my_puterr(char const *str);
 char **my_str_split(char *str, char separator);
 int my_str_to_int(char *str);
+
+#endif /* !MY_H_ */
