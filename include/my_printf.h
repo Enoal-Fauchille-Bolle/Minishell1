@@ -56,6 +56,5 @@ int my_str_include(char *str, char c);
     #define MODIFIERS "+- #0"
     #define LENGTH_MODIFIERS "hlqLjzZt"
     #define SPECIFIER_CALLS "scid%xoXbBpnfFuFeE"
-extern void (*SPECIFIER_FUNCTIONS[]) (va_list, int *, char *);
 
 #endif /* !MY_PRINTF_H_ */

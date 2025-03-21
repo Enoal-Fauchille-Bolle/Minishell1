@@ -12,11 +12,11 @@
 
 #include "my.h"
 
-const void (*SPECIFIER_FUNCTIONS[])(va_list, int *, char *) = {specifier_s,
-    specifier_c, specifier_i_and_d, specifier_i_and_d, specifier_percent,
-    specifier_x, specifier_o, specifier_x_maj, specifier_b, specifier_b_maj,
-    specifier_p, specifier_n, specifier_f, specifier_f_maj, specifier_u,
-    specifier_f_maj, specifier_e, specifier_e_maj};
+static void (*const SPECIFIER_FUNCTIONS[])(va_list, int *, char *) = {
+    specifier_s, specifier_c, specifier_i_and_d, specifier_i_and_d,
+    specifier_percent, specifier_x, specifier_o, specifier_x_maj, specifier_b,
+    specifier_b_maj, specifier_p, specifier_n, specifier_f, specifier_f_maj,
+    specifier_u, specifier_f_maj, specifier_e, specifier_e_maj};
 
 static void parse_format(va_list list, char *str, int *i, int *counter)
 {
